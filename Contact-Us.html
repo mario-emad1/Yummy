@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Style-Sheet -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    
+</head>
+
+<body>
+    <!-- ==================> Side-Bar <================== -->
+    <div class="side-bar d-flex justify-content-between position-fixed z-3">
+        <div class="side-list d-flex flex-column justify-content-between ps-3 pe-3 py-3">
+            <ul class="p-0">
+                <li class="py-1" id="Search"><a href="Search.html">
+                        Search
+                    </a></li>
+                <li class="py-1" id="Categories"><a href="Categories.html">
+                        Categories
+                    </a></li>
+                <li class="py-1" id="Area"><a href="Area.html">
+                        Area
+                    </a></li>
+                <li class="py-1" id="Ingredients"><a href="Ingredients.html">
+                        Ingredients
+                    </a></li>
+                <li class="py-1" id="ContactUs"><a href="Contact-Us.html">
+                        Contact Us
+                    </a></li>
+            </ul>
+            <div class="side-bar-footer d-flex flex-column">
+                <ul class="p-0 d-flex m-0">
+                    <li class="px-1"><a href="">
+                            <i class="fa-brands fa-facebook text-white"></i>
+                        </a></li>
+                    <li class="px-1"><a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                    <li class="px-1"><a href="">
+                            <i class="fa-solid fa-globe text-white"></i>
+                        </a></li>
+                </ul>
+                <p class="mt-2 mb-3 text-white">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="side-icons d-flex flex-column py-3 justify-content-between align-items-center ">
+            <img src="images/logo.png" class="w-75" alt="">
+            <i class="fa-solid fa-bars fs-2 text-black" id="openSideBar"></i>
+            <i class="fa-solid fa-xmark fs-2 text-black d-none" id="closeSideBar"></i>
+            <ul class="p-0 m-0 d-flex flex-column">
+                <li>
+                    <a href="" class="text-black">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                </li>
+                <li><a href="" class="text-black">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ==================> loading <================== -->
+    <div class="spinner-area z-2 position-absolute top-0 start-0 end-0 bottom-0 bg-black d-flex justify-content-center align-items-center">
+        <span class="loader z-3"></span>
+    </div>
+    <!-- ==================> Page-Content <================== -->
+    <section id="contactUs">
+        <div class="container-sm pt-4">
+            <div class="contact-group d-flex flex-column justify-content-center align-items-center w-75 mx-auto">
+                <div class="row contact-inputs">
+                    <div class="gy-sm-2 col-sm-12 col-md-6">
+                        <input type="text" class="form-control border border-1" placeholder="Enter Your Name" aria-label="Enter Your Name" id="name">
+                    </div>
+                    <div class="gy-sm-2 col-sm-12 col-md-6">
+                        <input type="email" class="form-control border border-1" placeholder="Enter Your Email" aria-label="Enter Your Email" id="email">
+                    </div>
+                    <div class="gy-sm-2 col-sm-12 col-md-6">
+                        <input type="tel" class="form-control border border-1" placeholder="Enter Your Phone" aria-label="Enter Your Phone" id="phone">
+                    </div>
+                    <div class="gy-sm-2 col-sm-12 col-md-6">
+                        <input type="number" class="form-control border border-1" placeholder="Enter Your Age" aria-label="Enter Your Age" >
+                    </div>
+                    <div class="gy-sm-2 col-sm-12 col-md-6">
+                        <input type="password" class="form-control border border-1" placeholder="Enter Your Password" aria-label="Enter Your Password" id="password">
+                    </div>
+                    <div class="gy-sm-2 col-sm-12 col-md-6">
+                        <input type="password" class="form-control border border-1" placeholder="Repassword" aria-label="Repassword" id="repassword">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-danger  mt-4"  id="submitBtn" disabled >Submit</button>
+            </div>
+        </div>
+    </section>
+    <script src="JS/jquery-3.7.1.js"></script>
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
